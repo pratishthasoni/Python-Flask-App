@@ -1,6 +1,10 @@
 runtime: python39  # Use the appropriate Python version
 
+<<<<<<< HEAD
 entrypoint: gunicorn -b :$PORT main:app  # Use Gunicorn as the web server
+=======
+entrypoint: gunicorn -b :$PORT app:app  # Use Gunicorn as the web server
+>>>>>>> 49e410cad50de45fbb166d9724f52128e4fd1eb6
 
 env_variables:
   FLASK_ENV: production  # Set Flask environment to production
